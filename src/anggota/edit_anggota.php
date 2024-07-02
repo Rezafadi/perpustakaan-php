@@ -28,7 +28,7 @@
     ?>
 
       <form class="card-body" action="update_anggota.php" method="POST">
-        <h1>UPDATE Anggota</h1>
+        <h1>UPDATE ANGGOTA</h1>
         <div class="mb-3">
           <label for="nama" class="form-label">Nama</label>
           <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
@@ -48,7 +48,7 @@
         </div>
         <div class="mb-3">
           <label for="alamat" class="form-label">Alamat</label>
-          <textarea class="form-control" name="alamat" rows="3" value="<?php echo $data['alamat'] ?>"></textarea>
+          <textarea class="form-control" name="alamat" rows="3" value="<?php echo $data['alamat'] ?>"><?php echo $data['alamat'] ?></textarea>
         </div>
         <div>
           <button type="submit" class="btn btn-primary">Submit</button>
