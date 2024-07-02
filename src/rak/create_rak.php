@@ -42,7 +42,7 @@
     $kodeRak = $_POST['kodeRak'];
     $lokasi = $_POST['lokasi'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$kodeRak' , '$lokasi')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$kodeRak' , '$lokasi')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {

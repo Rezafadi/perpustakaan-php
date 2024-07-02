@@ -50,11 +50,13 @@
     $phone = $_POST['tlp'];
     $alamat = $_POST['alamat'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$username', '$password', '$nama', '$phone', '$alamat')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$username', '$password', '$nama', '$phone', '$alamat')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {
       header("Location: index.php");
+    } else {
+      echo "Error: " . mysqli_error($koneksi);
     }
   }
   ?>

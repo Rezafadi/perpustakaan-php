@@ -56,7 +56,7 @@
     $phone = $_POST['tlp'];
     $alamat = $_POST['alamat'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$nama' , '$gender', '$alamat', '$phone')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$nama' , '$gender', '$alamat', '$phone')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {

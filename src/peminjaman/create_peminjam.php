@@ -52,7 +52,7 @@
     $anggota = $_POST['anggota'];
     $petugas = $_POST['petugas'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$pinjam' , '$kembali', '$anggota', '$petugas')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$pinjam' , '$kembali', '$anggota', '$petugas')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {
