@@ -1,7 +1,10 @@
 body {
+  /* background-color: red; Tambahkan ini untuk melihat apakah CSS diterapkan */
+  background-image: url("../image/background2.jpg");
+  background-size: cover;
+  background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100vh;

@@ -20,12 +20,12 @@
     </button>
   </div>
   <br>
-  <h1>
+  <h1 style="color: white;">
     <center>DATA ANGGOTA</center>
   </h1>
   <br />
   <br />
-  <table class="table">
+  <table class="table table-striped table-bordered table-hover table-responsive bg-light" style="width: 95%; margin: 0 auto">
     <thead>
       <tr>
         <th scope="col" style="text-align: center;">NO</th>

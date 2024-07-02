@@ -28,7 +28,7 @@
     ?>
 
       <form class="card-body" action="update_buku.php" method="POST">
-        <h1>UPDATE Buku</h1>
+        <h1>UPDATE BUKU</h1>
         <div class="mb-3">
           <label for="judul" class="form-label">Judul</label>
           <input type="hidden" name="id" value="<?php echo $data['id'] ?>">

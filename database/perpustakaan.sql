@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Jul 2024 pada 19.02
+-- Waktu pembuatan: 02 Jul 2024 pada 10.22
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -35,14 +35,6 @@ CREATE TABLE `anggota` (
   `telp` varchar(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Dumping data untuk tabel `anggota`
---
-
-INSERT INTO `anggota` (`id`, `nama`, `jenis_kelamin`, `alamat`, `telp`) VALUES
-(1, 'Muhammad Reza Fadilah', 'Laki-laki', 'Pamulang', '089684798232'),
-(3, 'Reza', 'Laki-laki', 'Cikasungka', '089684798232');
-
 -- --------------------------------------------------------
 
 --
@@ -58,13 +50,6 @@ CREATE TABLE `buku` (
   `penerbit` varchar(255) NOT NULL,
   `kode_rak` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data untuk tabel `buku`
---
-
-INSERT INTO `buku` (`id`, `judul`, `tahun_terbit`, `jumlah`, `pengarang`, `penerbit`, `kode_rak`) VALUES
-(1, 'test', 2024, 2, 'reza', 'reza', 't12');
 
 -- --------------------------------------------------------
 
@@ -121,13 +106,6 @@ CREATE TABLE `petugas` (
   `alamat` tinytext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Dumping data untuk tabel `petugas`
---
-
-INSERT INTO `petugas` (`id`, `username`, `password`, `nama`, `telp`, `alamat`) VALUES
-(1, 'admin', 'admin', 'Muhammad Reza Fadilah', '', 'Bukit Cikasungka Blok DF 5 No 12a RT 06 RW 10');
-
 -- --------------------------------------------------------
 
 --
@@ -135,9 +113,10 @@ INSERT INTO `petugas` (`id`, `username`, `password`, `nama`, `telp`, `alamat`) V
 --
 
 CREATE TABLE `rak` (
-  `kode_rak` varchar(10) NOT NULL,
-  `lokasi` tinytext DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+  `id` int(11) NOT NULL,
+  `kode_rak` varchar(25) NOT NULL,
+  `lokasi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -183,7 +162,7 @@ ALTER TABLE `petugas`
 -- Indeks untuk tabel `rak`
 --
 ALTER TABLE `rak`
-  ADD PRIMARY KEY (`kode_rak`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
@@ -205,25 +184,31 @@ ALTER TABLE `buku`
 -- AUTO_INCREMENT untuk tabel `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `penerbit`
 --
 ALTER TABLE `penerbit`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `petugas`
 --
 ALTER TABLE `petugas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `rak`
+--
+ALTER TABLE `rak`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
