@@ -62,7 +62,7 @@
     $penerbit = $_POST['penerbit'];
     $kodeRak = $_POST['kodeRak'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$judul' , '$tahunTerbit', '$jml', '$pengarang', '$penerbit', '$kodeRak')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$judul' , '$tahunTerbit', '$jml', '$pengarang', '$penerbit', '$kodeRak')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {
