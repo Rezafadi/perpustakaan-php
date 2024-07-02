@@ -47,7 +47,7 @@
     $alamat = $_POST['alamat'];
     $telp = $_POST['telp'];
 
-    $query = "INSERT INTO $tableName VALUES ('', '$nama' , '$alamat', '$telp')";
+    $query = "INSERT INTO $tableName VALUES ('0', '$nama' , '$alamat', '$telp')";
     $result = mysqli_query($koneksi, $query);
 
     if ($result) {

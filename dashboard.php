@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
   <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 
-<body style="background-image: url('assets/image/background2.jpg'); background-size: cover; background-position: center; overflow: hidden;">
+<body style="background-image: url('assets/image/background2.jpg'); background-size: cover; background-position: center;">
   <div style="width: 30rem; background-color: yellow; height: 15rem; padding: 10px; margin-left: 20px; margin-top: 20px;">
     <h2>Selamat Datang Petugas</h2>
     <h4>Nama : <?php echo $_SESSION['nama']; ?></h4>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: -30vh;
+    margin-top: 5vh;
     ">
     <p style="color: white; font-size: 50px; font-weight: bolder;">PERPUSTAKAAN</p>
     <button class="btn">
