@@ -34,6 +34,7 @@ if (!isset($_SESSION['username'])) {
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    padding-bottom: 5vh;
     ">
     <p style="color: white; font-size: 50px; font-weight: bolder;">PERPUSTAKAAN</p>
     <button class="btn">
