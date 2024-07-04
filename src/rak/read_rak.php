@@ -21,7 +21,7 @@
   </div>
   <br>
   <h1 style="color: white;">
-    <center>DATA PENGARANG</center>
+    <center>DATA RAK</center>
   </h1>
   <br />
   <br />

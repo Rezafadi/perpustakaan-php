@@ -13,7 +13,7 @@
   <br />
   <div>
     <button class="btn-primary mx-3">
-      <a href="read_penerbit.php" style="color: white; text-decoration: none">Kembali</a>
+      <a href="read_pengarang.php" style="color: white; text-decoration: none">Kembali</a>
     </button>
   </div>
 
